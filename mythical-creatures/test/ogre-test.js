@@ -5,22 +5,22 @@ const Human = require('../exercises/human');
 describe('Ogre', () => {
   // Oh no! It looks like there's no text in the `it` blocks! I guess you'll have to read the tests SUPER carefully to know what the test is expecting!
 
-  it.skip('', function() {
+  it('should return the ogres name', function() {
     const ogre = new Ogre({name:'Brak'});
     assert.equal(ogre.name, 'Brak');
   });
 
-  it.skip('', function() {
+  it('should default home to being swamp', function() {
     const ogre = new Ogre({name: 'Brak'});
     assert.equal(ogre.home, 'Swamp');
   });
 
-  it.skip('', function() {
+  it('should be able to have a new home', function() {
     const ogre = new Ogre({name: 'Brak', abode: 'The Ritz'});
     assert.equal(ogre.home, 'The Ritz');
   });
 
-  it.skip('', function() {
+  it('should add an encounter every time it encounters a human', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -31,7 +31,7 @@ describe('Ogre', () => {
     assert.equal(human.encounterCounter, 1);
   });
 
-  it.skip('', function() {
+  it('human should notice the ogre after 3 encounters', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -43,7 +43,7 @@ describe('Ogre', () => {
     assert.equal(human.noticesOgre(), true);
   });
 
-  it.skip('', function() {
+  it('should not notice after 5 encounters, but again at 6', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -62,7 +62,7 @@ describe('Ogre', () => {
     assert.equal(human.noticesOgre(), true);
   });
 
-  it.skip('', function() {
+  it('should be able to swing at a human', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -72,7 +72,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('', function() {
+  it('should swing at a human if it the human notices it', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -86,7 +86,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('', function() {
+  it('should knock out the human after swinging twice', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -103,7 +103,7 @@ describe('Ogre', () => {
     assert.equal(human.knockedOut, true);
   });
 
-  it.skip('', function() {
+  it('should revive the human when it apologizes', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
