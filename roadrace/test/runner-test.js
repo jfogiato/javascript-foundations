@@ -1,3 +1,4 @@
+const { it } = require("mocha");
 var Runner = require("../src/runner.js");
 var assert = require('chai').assert;
 
